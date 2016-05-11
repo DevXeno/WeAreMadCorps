@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace WeAreMadCorps
 {
@@ -13,6 +14,11 @@ namespace WeAreMadCorps
         public HomePage()
         {
             InitializeComponent();
+        }
+
+        private void InitializeComponent()
+        {
+            this.LoadFromXaml(typeof(HomePageXaml));
         }
     }
 }

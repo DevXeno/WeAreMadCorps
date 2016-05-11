@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using WeAreMadCorps.Dashboard;
 using Xamarin.Forms;
 
 namespace WeAreMadCorps
@@ -12,7 +12,8 @@ namespace WeAreMadCorps
         public App()
         {
             // The root page of your application
-            MainPage = new NavigationPage(new HomePage());
+            MallDashApp DashApp = new MallDashApp();
+            MainPage = DashApp.GetMainPage();
         }
 
         protected override void OnStart()
