@@ -19,7 +19,7 @@ namespace WeAreMadCorps.Dashboard
                 RowSpacing = 0,
                 VerticalOptions = LayoutOptions.FillAndExpand
             };
-
+            //Définition 4 Lignes
             foreach (var x in Enumerable.Range(0, 4).ToList())
             {
                 dashboard.RowDefinitions.Add(
@@ -28,8 +28,8 @@ namespace WeAreMadCorps.Dashboard
                         Height = new GridLength(1, GridUnitType.Star)
                     });
             }
-
-            foreach (var x in Enumerable.Range(0, 3).ToList())
+            //Définition 3 Colonnes ( passage à 1 seule)
+            foreach (var x in Enumerable.Range(0, 1).ToList())
             {
                 dashboard.ColumnDefinitions.Add(new ColumnDefinition
                 {

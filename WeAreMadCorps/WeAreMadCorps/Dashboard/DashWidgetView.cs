@@ -14,7 +14,20 @@ namespace WeAreMadCorps.Widgets
 
         public DashWidgetView(DashSquare square)
         {
+
             RelativeLayout layout = new RelativeLayout();
+
+            var tapGestureRecognizer = new TapGestureRecognizer();
+            tapGestureRecognizer.Tapped += (s, e) => {
+                EventHandler<WidgetTappedEventArgs> handler = Tapped;
+
+                if (handler != null)
+                {
+                    handler(this, new WidgetTappedEventArgs(square.NavigateType));
+                }
+            };
+
+            layout.GestureRecognizers.Add(tapGestureRecognizer);
 
             var backgroundImage = new Image()
             {
