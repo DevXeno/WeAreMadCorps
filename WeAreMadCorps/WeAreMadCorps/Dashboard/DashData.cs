@@ -26,7 +26,7 @@ namespace WeAreMadCorps.Dashboard
                     Text = "Nos Partenaires",
                     Column = 1,
                     Row = 0,
-                    NavigateType = typeof(Page2)
+                    NavigateType = typeof(PartenairesCarousel)
                 },
                 new DashSquare () {
                     BackgroundImage = "shoesbg.png",
