@@ -99,8 +99,6 @@ namespace WeAreMadCorps.Pages.Partenaires
                          }
             };
         }
-
-
         public PartenairesMainContent(string titleLbl,string whereLbl,string imagePath,string descriptionLbl)
         {
             AbsoluteLayout peakLayout = new AbsoluteLayout

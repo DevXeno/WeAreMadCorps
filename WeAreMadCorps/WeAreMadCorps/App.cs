@@ -11,6 +11,7 @@ namespace WeAreMadCorps
     {
         public App()
         {
+            
             // The root page of your application
             MallDashApp DashApp = new MallDashApp();
             MainPage = DashApp.GetMainPage();
