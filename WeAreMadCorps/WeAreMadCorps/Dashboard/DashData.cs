@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WeAreMadCorps.Pages.LeStaff;
 using WeAreMadCorps.Pages.Partenaires;
 using WeAreMadCorps.Pages.Recrutement;
 
@@ -15,7 +16,7 @@ namespace WeAreMadCorps.Dashboard
             return new List<DashSquare>() {
                 new DashSquare () {
                     BackgroundImage = "fashionbg.png",
-                    IconImage = "fashion.png",
+                    IconImage = "appbar.group.png",
                     Text = "Qui Sommes-Nous ?",
                     Column = 0,
                     Row = 0,
@@ -43,7 +44,7 @@ namespace WeAreMadCorps.Dashboard
                     Text = "Le Staff",
                     Column = 0,
                     Row = 1,
-                    NavigateType = typeof(Page4)
+                    NavigateType = typeof(MasterDetailStaffPage)
                 },
                 new DashSquare () {
                     BackgroundImage = "accessoriesbg.png",
