@@ -44,7 +44,7 @@ namespace WeAreMadCorps.Dashboard
                     Text = "Le Staff",
                     Column = 0,
                     Row = 1,
-                    NavigateType = typeof(MasterDetailStaffPage)
+                    NavigateType = typeof(StaffMemberListView)
                 },
                 new DashSquare () {
                     BackgroundImage = "accessoriesbg.png",

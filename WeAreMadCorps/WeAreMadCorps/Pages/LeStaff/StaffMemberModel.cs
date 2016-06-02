@@ -35,9 +35,13 @@ namespace WeAreMadCorps.Pages.LeStaff
         {
             staffMembers = new ObservableCollection<StaffMember>();
             staffMembers.Add(new StaffMember { Name = "Sarkander", Description = " Président / CEO ", ImagePath = "foodbg.png" });
-            staffMembers.Add(new StaffMember { Name = "Anyanyah", Description = " Vice-Président / DG ", ImagePath = "Habanero.png" });
-            staffMembers.Add(new StaffMember { Name = "Cellen", Description = " Directeur du pôle évènementiel ", ImagePath = "housewaresbg.png" });
-            staffMembers.Add(new StaffMember { Name = "Kiffman", Description = " Directeur Media ", ImagePath = "servicesbg.png" });
+            staffMembers.Add(new StaffMember { Name = "Anyanyah", Description = " Vice-Président / DG ", ImagePath = "anya.png" });
+            staffMembers.Add(new StaffMember { Name = "Cellen", Description = " Directeur du pôle évènementiel ", ImagePath = "Cellen.png" });
+            staffMembers.Add(new StaffMember { Name = "Kiffman", Description = " Directeur Media ", ImagePath = "kiff1.png" });
+            staffMembers.Add(new StaffMember { Name = "Ravenna", Description = " ", ImagePath = "nadia-ravenna.png" });
+            staffMembers.Add(new StaffMember { Name = "Pyhra", Description = "  ", ImagePath = "pyhra.jpg" });
+            staffMembers.Add(new StaffMember { Name = "Sudiste", Description = " ", ImagePath = "sud1.png" });
+            staffMembers.Add(new StaffMember { Name = "Waxo", Description = "  ", ImagePath = "waxo.jpg" });
         }
     }
 }

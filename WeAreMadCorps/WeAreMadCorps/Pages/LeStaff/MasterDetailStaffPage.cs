@@ -18,7 +18,7 @@ namespace WeAreMadCorps.Pages.LeStaff
             // The root page of your application
             var navContainer = new FreshNavigationContainer(FreshPageModelResolver.ResolvePageModel<StaffMemberModel>());
             navContainer.BarTextColor = Color.FromHex("#3c3947");
-            Detail = navContainer;
+            Detail = null;;
         }
     }
 }
