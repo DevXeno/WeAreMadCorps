@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ff="using:FFImageLoading"
              x:Class="WeAreMadCorps.Pages.LeStaff.StaffMemberListView">
   	<Grid BackgroundColor="#f2f2f4">
 			<Grid.RowDefinitions>
@@ -37,6 +38,7 @@
 									</Grid.RowDefinitions>
 									<Grid Grid.Row="0" Padding="0" BackgroundColor="#e4e4e4">
 										<Image Source="{Binding ImagePath}" />
+                    
 									</Grid>
 									<Grid Grid.Row="1" BackgroundColor="#ffffff" RowSpacing="0">
 										<Grid Padding="15" RowSpacing="0">

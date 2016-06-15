@@ -15,6 +15,7 @@ namespace WeAreMadCorps.Pages.LeStaff
             InitializeComponent();
 
             StaffMemberModel smModel = new StaffMemberModel();
+            
             LVMain.ItemsSource = smModel.staffMembers;
         }
     }
