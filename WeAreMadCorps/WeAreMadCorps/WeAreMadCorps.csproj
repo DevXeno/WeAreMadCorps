@@ -51,10 +51,10 @@
       <DependentUpon>StaffMember.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\LeStaff\StaffMember.cs" />
-    <Compile Include="Pages\LeStaff\StaffMemberListView.xaml.cs">
-      <DependentUpon>StaffMemberListView.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Pages\LeStaff\StaffMemberModel.cs" />
+    <Compile Include="Pages\LeStaff\StaffMembers.xaml.cs">
+      <DependentUpon>StaffMembers.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Partenaires\PartenairesCarousel.cs" />
     <Compile Include="Pages\Partenaires\PartenairesMainContent.cs" />
     <Compile Include="Pages\Recrutement\FindAPostePage.cs" />
@@ -150,10 +150,10 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Page Include="Pages\LeStaff\StaffMemberListView.xaml">
+    <EmbeddedResource Include="Pages\LeStaff\StaffMembers.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
-    </Page>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.0.38-pre2\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.0.38-pre2\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />

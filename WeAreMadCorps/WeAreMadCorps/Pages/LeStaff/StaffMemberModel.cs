@@ -34,14 +34,14 @@ namespace WeAreMadCorps.Pages.LeStaff
         public StaffMemberModel()
         {
             staffMembers = new ObservableCollection<StaffMember>();
-            staffMembers.Add(new StaffMember { Name = "Sarkander", Description = " Président / CEO ", ImagePath = "foodbg.png" });
-            staffMembers.Add(new StaffMember { Name = "Anyanyah", Description = " Vice-Président / DG ", ImagePath = "anya.png" });
-            staffMembers.Add(new StaffMember { Name = "Cellen", Description = " Directeur du pôle évènementiel ", ImagePath = "Cellen.png" });
-            staffMembers.Add(new StaffMember { Name = "Kiffman", Description = " Directeur Media ", ImagePath = "kiff1.png" });
-            staffMembers.Add(new StaffMember { Name = "Ravenna", Description = " ", ImagePath = "nadia-ravenna.png" });
-            staffMembers.Add(new StaffMember { Name = "Pyhra", Description = "  ", ImagePath = "pyhra.jpg" });
-            staffMembers.Add(new StaffMember { Name = "Sudiste", Description = " ", ImagePath = "sud1.png" });
-            staffMembers.Add(new StaffMember { Name = "Waxo", Description = "  ", ImagePath = "waxo.jpg" });
+            staffMembers.Add(new StaffMember { Name = "Sarkander", Description = " Président / CEO ", ImagePath = "http://i2.wp.com/www.madcorps.com/wp-content/uploads/2014/12/sark1.png" });
+            staffMembers.Add(new StaffMember { Name = "Anyanyah", Description = " Vice-Président / DG ", ImagePath = "http://i0.wp.com/www.madcorps.com/wp-content/uploads/2014/12/anyah1.png" });
+            staffMembers.Add(new StaffMember { Name = "Cellen", Description = " Directeur du pôle évènementiel ", ImagePath = "http://i2.wp.com/www.madcorps.com/wp-content/uploads/2014/12/Cellen.png" });
+            staffMembers.Add(new StaffMember { Name = "Kiffman", Description = " Directeur Media ", ImagePath = "http://i1.wp.com/www.madcorps.com/wp-content/uploads/2014/12/kiff1.png" });
+            staffMembers.Add(new StaffMember { Name = "Ravenna", Description = " ", ImagePath = "http://i1.wp.com/www.madcorps.com/wp-content/uploads/2014/12/nadia-ravenna.png" });
+            staffMembers.Add(new StaffMember { Name = "Pyhra", Description = "  ", ImagePath = "http://i2.wp.com/www.madcorps.com/wp-content/uploads/2014/12/pyhra.jpg" });
+            staffMembers.Add(new StaffMember { Name = "Sudiste", Description = " ", ImagePath = "http://i0.wp.com/www.madcorps.com/wp-content/uploads/2014/12/sud1.png" });
+            staffMembers.Add(new StaffMember { Name = "Waxo", Description = "  ", ImagePath = "http://i1.wp.com/www.madcorps.com/wp-content/uploads/2014/12/waxo.jpg" });
         }
     }
 }
