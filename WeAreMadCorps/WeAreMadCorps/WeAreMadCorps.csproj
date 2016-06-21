@@ -46,9 +46,10 @@
     <Compile Include="HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\LeStaff\MasterDetailStaffPage.cs" />
-    <Compile Include="Pages\LeStaff\StaffMember.xaml.cs">
-      <DependentUpon>StaffMember.xaml</DependentUpon>
+    <Compile Include="Pages\LesStreameurs\StreamMember.cs" />
+    <Compile Include="Pages\LesStreameurs\StreamMemberModel.cs" />
+    <Compile Include="Pages\LesStreameurs\StreamMembers.xaml.cs">
+      <DependentUpon>StreamMembers.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\LeStaff\StaffMember.cs" />
     <Compile Include="Pages\LeStaff\StaffMemberModel.cs" />
@@ -144,13 +145,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\LeStaff\StaffMember.xaml">
+    <EmbeddedResource Include="Pages\LeStaff\StaffMembers.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pages\LeStaff\StaffMembers.xaml">
+    <EmbeddedResource Include="Pages\LesStreameurs\StreamMembers.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

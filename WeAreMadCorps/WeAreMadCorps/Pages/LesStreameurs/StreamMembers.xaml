@@ -3,12 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:ff="using:FFImageLoading"
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
-             Title="Le Staff"
-             x:Class="WeAreMadCorps.Pages.LeStaff.StaffMembers">
+             Title="Les Streameurs"
+             x:Class="WeAreMadCorps.Pages.LesStreameurs.StreamMembers">
   <ContentPage.Content>
 	<Grid>
 			<!-- The list view -->
-			<ListView x:Name ="LVMain" BackgroundColor="Transparent" SelectedItem="{Binding SelectedItem, Mode=TwoWay}" HasUnevenRows="true" ItemsSource="{Binding staffMembers}" CachingStrategy="RecycleElement" SeparatorVisibility="None" >
+			<ListView x:Name ="LVMain" BackgroundColor="Transparent" SelectedItem="{Binding SelectedItem, Mode=TwoWay}" HasUnevenRows="true" ItemsSource="{Binding streamMembers}" CachingStrategy="RecycleElement" SeparatorVisibility="None" >
 				<ListView.ItemTemplate>
 					<DataTemplate>
             <ViewCell>

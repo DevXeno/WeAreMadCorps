@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FFImageLoading.Forms;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -45,7 +46,7 @@ namespace WeAreMadCorps.Widgets
                     return parent.Height;
                 }));
 
-            var iconImage = new Image() { Source = new FileImageSource() { File = square.IconImage } };
+            var iconImage = new CachedImage() { Source = new FileImageSource() { File = square.IconImage } };
 
             layout.Children.Add(
                 iconImage,

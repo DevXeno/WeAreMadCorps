@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WeAreMadCorps.Pages.LesStreameurs;
 using WeAreMadCorps.Pages.LeStaff;
 using WeAreMadCorps.Pages.Partenaires;
 using WeAreMadCorps.Pages.Recrutement;
@@ -52,7 +53,7 @@ namespace WeAreMadCorps.Dashboard
                     Text = "Les Streameurs",
                     Column = 1,
                     Row = 1,
-                    NavigateType = typeof(Page5)
+                    NavigateType = typeof(StreamMembers)
                 },
                 new DashSquare () {
                     BackgroundImage = "housewaresbg.png",
