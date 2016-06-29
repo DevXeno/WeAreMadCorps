@@ -46,6 +46,11 @@
     <Compile Include="HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\LesEquipes\TeamModel.cs" />
+    <Compile Include="Pages\LesEquipes\TeamView.xaml.cs">
+      <DependentUpon>TeamView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\LesEquipes\TeamViewModel.cs" />
     <Compile Include="Pages\LesStreameurs\StreamMember.cs" />
     <Compile Include="Pages\LesStreameurs\StreamMemberModel.cs" />
     <Compile Include="Pages\LesStreameurs\StreamMembers.xaml.cs">
@@ -152,6 +157,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Pages\LesStreameurs\StreamMembers.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\LesEquipes\TeamView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

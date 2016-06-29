@@ -1,35 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:ff="using:FFImageLoading"
+               xmlns:ff="using:FFImageLoading"
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
-             Title="Les Streameurs"
-             x:Class="WeAreMadCorps.Pages.LesStreameurs.StreamMembers">
+               Title="Les Equipes"
+             x:Class="WeAreMadCorps.Pages.LesEquipes.TeamView">
 
-  <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+  <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Green">
     <ListView
            x:Name="LVMain"
-           ItemsSource="{Binding streamMembers}"
+           ItemsSource="{Binding Teams}"
            HasUnevenRows ="false"
-           RowHeight="120"
+           RowHeight="180"
            AbsoluteLayout.LayoutFlags="All"
            AbsoluteLayout.LayoutBounds="0,0,1,1">
       <ListView.ItemTemplate>
         <DataTemplate>
           <ViewCell StyleId="disclosure">
-            <StackLayout Spacing="0" HeightRequest="120">
+            <StackLayout Spacing="0" HeightRequest="180">
+              <ffimageloading:CachedImage Source = "{Binding ImagePath}" Aspect="AspectFill"/>
               <Grid Padding="16" ColumnSpacing="16" BackgroundColor="White">
                 <Grid.ColumnDefinitions>
                   <ColumnDefinition Width="*"/>
                   <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <ffimageloading:CachedImage Source = "{Binding ImagePath}" WidthRequest="60" HeightRequest="70">
-                </ffimageloading:CachedImage>
+              
+           
                 <StackLayout VerticalOptions="Center" Grid.Column="1" Spacing="0" StyleId="SponsorCell">
                   <Label Text="{Binding NameToUpper}"/>
-                  <Label Text="{Binding Description}"/>
+                  <Label Text="{Binding Jeu}"/>
                 </StackLayout>
-
               </Grid>
             </StackLayout>
           </ViewCell>
@@ -38,5 +38,4 @@
     </ListView>
 
   </AbsoluteLayout>
-
 </ContentPage>

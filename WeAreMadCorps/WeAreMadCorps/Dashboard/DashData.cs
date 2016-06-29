@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WeAreMadCorps.Pages.LesEquipes;
 using WeAreMadCorps.Pages.LesStreameurs;
 using WeAreMadCorps.Pages.LeStaff;
 using WeAreMadCorps.Pages.Partenaires;
@@ -61,7 +62,7 @@ namespace WeAreMadCorps.Dashboard
                     Text = "Les Equipes",
                     Column = 2,
                     Row = 1,
-                    NavigateType = typeof(Page6)
+                    NavigateType = typeof(TeamView)
                 },
                 new DashSquare () {
                     BackgroundImage = "giftsbg.png",
