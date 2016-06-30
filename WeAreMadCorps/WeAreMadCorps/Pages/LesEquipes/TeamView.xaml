@@ -10,28 +10,26 @@
     <ListView
            x:Name="LVMain"
            ItemsSource="{Binding Teams}"
-           HasUnevenRows ="false"
-           RowHeight="180"
            AbsoluteLayout.LayoutFlags="All"
            AbsoluteLayout.LayoutBounds="0,0,1,1">
       <ListView.ItemTemplate>
         <DataTemplate>
-          <ViewCell StyleId="disclosure">
-            <StackLayout Spacing="0" HeightRequest="180">
-              <ffimageloading:CachedImage Source = "{Binding ImagePath}" Aspect="AspectFill"/>
-              <Grid Padding="16" ColumnSpacing="16" BackgroundColor="White">
-                <Grid.ColumnDefinitions>
-                  <ColumnDefinition Width="*"/>
-                  <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-              
-           
-                <StackLayout VerticalOptions="Center" Grid.Column="1" Spacing="0" StyleId="SponsorCell">
-                  <Label Text="{Binding NameToUpper}"/>
-                  <Label Text="{Binding Jeu}"/>
-                </StackLayout>
-              </Grid>
-            </StackLayout>
+          <ViewCell>
+            <Grid>
+              <ffimageloading:CachedImage Source = "{Binding ImagePath}" Aspect="Fill" Opacity="0.5"/>
+              <StackLayout>
+                <Grid Padding="16" ColumnSpacing="16" BackgroundColor="Transparent">
+                  <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                  </Grid.ColumnDefinitions>
+                  <StackLayout VerticalOptions="Center" Grid.Column="1" Spacing="0" StyleId="SponsorCell">
+                    <Label TextColor="Black"  Text="{Binding NameToUpper}"/>
+                    <Label Text="{Binding Jeu}"/>
+                  </StackLayout>
+                </Grid>
+              </StackLayout>
+            </Grid>
           </ViewCell>
         </DataTemplate>
       </ListView.ItemTemplate>
