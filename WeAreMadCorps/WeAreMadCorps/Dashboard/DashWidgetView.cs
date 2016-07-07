@@ -71,7 +71,7 @@ namespace WeAreMadCorps.Widgets
             var dashlabel = new Label()
             {
                 Text = square.Text,
-                XAlign = TextAlignment.Center,
+                HorizontalTextAlignment = TextAlignment.Center,
                 TextColor = Color.White,
                 FontFamily = Device.OnPlatform("AvenirNextCondensed-Bold", "sans-serif-condensed", null)
             };

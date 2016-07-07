@@ -70,7 +70,7 @@ namespace WeAreMadCorps.Dashboard
                     Text = "La WebTV",
                     Column = 0,
                     Row = 2,
-                    NavigateType = typeof(Page7)
+                    NavigateType = typeof(WebTvPage)
                 },
                 new DashSquare () {
                     BackgroundImage = "foodbg.png",
@@ -78,7 +78,7 @@ namespace WeAreMadCorps.Dashboard
                     Text = "Le Site",
                     Column = 1,
                     Row = 2,
-                    NavigateType = typeof(Page8)
+                    NavigateType = typeof(SiteWebPage)
                 },
                 new DashSquare () {
                     BackgroundImage = "restroomsbg.png",
@@ -86,7 +86,7 @@ namespace WeAreMadCorps.Dashboard
                     Text = "Le Forum",
                     Column = 2,
                     Row = 2,
-                    NavigateType = typeof(Page9)
+                    NavigateType = typeof(ForumPage)
                 },
                 new DashSquare () {
                     BackgroundImage = "vendingbg.png",

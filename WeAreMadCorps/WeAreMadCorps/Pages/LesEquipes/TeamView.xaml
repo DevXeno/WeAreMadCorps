@@ -6,30 +6,33 @@
                Title="Les Equipes"
              x:Class="WeAreMadCorps.Pages.LesEquipes.TeamView">
 
-  <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Green">
+  <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
     <ListView
            x:Name="LVMain"
            ItemsSource="{Binding Teams}"
            AbsoluteLayout.LayoutFlags="All"
-           AbsoluteLayout.LayoutBounds="0,0,1,1">
+           AbsoluteLayout.LayoutBounds="0,0,1,1"
+            RowHeight="120"
+            HasUnevenRows ="false"
+           >
       <ListView.ItemTemplate>
         <DataTemplate>
-          <ViewCell>
-            <Grid>
-              <ffimageloading:CachedImage Source = "{Binding ImagePath}" Aspect="Fill" Opacity="0.5"/>
-              <StackLayout>
-                <Grid Padding="16" ColumnSpacing="16" BackgroundColor="Transparent">
+          <ViewCell StyleId="disclosure">
+              <StackLayout Spacing="0" HeightRequest="120">
+                 
+                <Grid Padding="5" ColumnSpacing="16"  BackgroundColor="White">
                   <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                   </Grid.ColumnDefinitions>
-                  <StackLayout VerticalOptions="Center" Grid.Column="1" Spacing="0" StyleId="SponsorCell">
-                    <Label TextColor="Black"  Text="{Binding NameToUpper}"/>
-                    <Label Text="{Binding Jeu}"/>
+                   <ffimageloading:CachedImage  Grid.Column="0" Grid.ColumnSpan="2"  Source = "{Binding ImagePath}" Aspect="Fill" />
+                  <StackLayout VerticalOptions="End" HorizontalOptions="Start" Grid.Column="0" Grid.ColumnSpan="2" Spacing="0" StyleId="SponsorCell" BackgroundColor="Transparent">
+                    <Label BackgroundColor="Green" TextColor="Black" Text="{Binding NameToUpper}"/>
+                    <Label BackgroundColor="Green" TextColor="Black" Text="{Binding Jeu}"/>
                   </StackLayout>
+                  
                 </Grid>
               </StackLayout>
-            </Grid>
           </ViewCell>
         </DataTemplate>
       </ListView.ItemTemplate>

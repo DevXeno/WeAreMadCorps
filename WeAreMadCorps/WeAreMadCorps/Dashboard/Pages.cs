@@ -164,40 +164,25 @@ namespace WeAreMadCorps.Dashboard
             };
         }
     }
-    public class Page7 : ContentPage
+    public class WebTvPage : ContentPage
     {
-        public Page7()
+        public WebTvPage()
         {
-            Content = new StackLayout
-            {
-                Children = {
-                    new Label { Text = "Page 7" }
-                }
-            };
+            Device.OpenUri(new Uri("http://twitch.tv/madcorps_tv"));
         }
     }
-    public class Page8 : ContentPage
+    public class SiteWebPage : ContentPage
     {
-        public Page8()
+        public SiteWebPage()
         {
-            Content = new StackLayout
-            {
-                Children = {
-                    new Label { Text = "Page 8" }
-                }
-            };
+            Device.OpenUri(new Uri("http://madcorps.com"));
         }
     }
-    public class Page9 : ContentPage
+    public class ForumPage : ContentPage
     {
-        public Page9()
+        public ForumPage()
         {
-            Content = new StackLayout
-            {
-                Children = {
-                    new Label { Text = "Page 9" }
-                }
-            };
+            Device.OpenUri(new Uri("http://madcorps.com/forum/"));
         }
     }
     public class Page10 : ContentPage

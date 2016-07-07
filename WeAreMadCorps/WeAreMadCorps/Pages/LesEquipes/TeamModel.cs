@@ -34,13 +34,13 @@ namespace WeAreMadCorps.Pages.LesEquipes
         public TeamModel()
         {
             Teams = new ObservableCollection<TeamViewModel>();
-            Teams.Add(new TeamViewModel { Name = "MadCorps.Ladies",Jeu="CS:GO",Plateforme="PC", Description = "  " });
-            Teams.Add(new TeamViewModel { Name = "MadCorps.Hearthstone", Jeu = "Hearthstone", Plateforme = "PC", Description = "  "});
-            Teams.Add(new TeamViewModel { Name = "MadCorps eSport", Jeu = "HOTS", Plateforme = "PC", Description = "  " });
-            Teams.Add(new TeamViewModel { Name = "MadCorps Green", Jeu = "LoL", Plateforme = "PC", Description = "  "});
-            Teams.Add(new TeamViewModel { Name = "MadCorps White", Jeu = "LoL", Plateforme = "PC", Description = "  "});
             Teams.Add(new TeamViewModel { Name = "MadCorps.OW", Jeu = "Overwatch", Plateforme = "PC", Description = "  ", ImagePath = "http://i.imgur.com/z4rs6Vb.png" });
-        }
+            Teams.Add(new TeamViewModel { Name = "MadCorps.Ladies",Jeu="CS:GO",Plateforme="PC", Description = "  ",ImagePath= "http://i.imgur.com/h33SO9S.png" });
+            Teams.Add(new TeamViewModel { Name = "MadCorps.Hearthstone", Jeu = "Hearthstone", Plateforme = "PC", Description = "  ",ImagePath= "http://i.imgur.com/yMwnjAH.png"});
+            Teams.Add(new TeamViewModel { Name = "MadCorps eSport", Jeu = "HOTS", Plateforme = "PC", Description = "  ",ImagePath= "http://i.imgur.com/sP4H0Z7.png" });
+            Teams.Add(new TeamViewModel { Name = "MadCorps Green", Jeu = "LoL", Plateforme = "PC", Description = "  ",ImagePath= "http://i.imgur.com/Xksm6pH.png"});
+            Teams.Add(new TeamViewModel { Name = "MadCorps White", Jeu = "LoL", Plateforme = "PC", Description = "  ",ImagePath= "http://i.imgur.com/XnovTQc.jpg"});
+            }
 
     }
 }
