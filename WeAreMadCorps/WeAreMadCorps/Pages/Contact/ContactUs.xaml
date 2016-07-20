@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WeAreMadCorps.Pages.Contact.ContactUs">
+
+  <Grid Padding="16" ColumnSpacing="16" >
+    <Grid.RowDefinitions>
+      <RowDefinition Height="50" />
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+    <Label Text="Une question ? Une idée à nous faire partager ?" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="0" />
+    <StackLayout Orientation="Vertical" Padding="10" Grid.Row="1" >
+
+      <Label Text="Votre nom (obligatoire)" />
+      <Entry Text="{Binding Path=NameEntry}" x:Name="textBoxName"   />
+
+      <Label Text="Votre email (obligatoire)"/>
+      <Entry Text="{Binding Path=MailEntry}"  x:Name="textBoxEmail"  Keyboard="Email"/>
+
+      <Label Text="Sujet"  />
+      <Entry Text="{Binding Path=SujetEntry}" x:Name="textBoxSujet"/>
+
+      <Label Text="Votre message" />
+      <Entry Text="{Binding Path=MessageEntry}" x:Name="textBoxMessage" />
+
+      <Button Text="Envoyer" Clicked="OnEnvoyerClicked" />
+
+
+    </StackLayout>
+
+  </Grid>
+</ContentPage>

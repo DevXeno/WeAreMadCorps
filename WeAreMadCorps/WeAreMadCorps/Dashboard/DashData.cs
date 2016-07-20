@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WeAreMadCorps.Pages.Contact;
 using WeAreMadCorps.Pages.LesEquipes;
 using WeAreMadCorps.Pages.LesStreameurs;
 using WeAreMadCorps.Pages.LeStaff;
@@ -102,7 +103,7 @@ namespace WeAreMadCorps.Dashboard
                     Text = "Contactez-nous",
                     Column = 1,
                     Row = 3,
-                    NavigateType = typeof(Page11)
+                    NavigateType = typeof(ContactUs)
                 },
                 new DashSquare () { BackgroundImage = "hoursbg.png",
                     IconImage = "hours.png",

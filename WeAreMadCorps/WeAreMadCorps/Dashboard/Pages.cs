@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WeAreMadCorps.Pages.Contact;
 using WeAreMadCorps.Ressources;
 using Xamarin.Forms;
 
@@ -168,6 +169,15 @@ namespace WeAreMadCorps.Dashboard
     {
         public WebTvPage()
         {
+            Content = new StackLayout
+            {
+                Children = {
+                    new Label { Text = "Redirection vers la WebTV MadCorps en cours ..." ,
+                                HorizontalTextAlignment= TextAlignment.Center,
+                                VerticalTextAlignment = TextAlignment.Center}
+
+                }
+            };
             Device.OpenUri(new Uri("http://twitch.tv/madcorps_tv"));
         }
     }
@@ -175,6 +185,15 @@ namespace WeAreMadCorps.Dashboard
     {
         public SiteWebPage()
         {
+            Content = new StackLayout
+            {
+                Children = {
+                    new Label { Text = "Redirection vers www.madcorps.com en cours ..." ,
+                                HorizontalTextAlignment= TextAlignment.Center,
+                                VerticalTextAlignment = TextAlignment.Center}
+
+                }
+            };
             Device.OpenUri(new Uri("http://madcorps.com"));
         }
     }
@@ -182,7 +201,17 @@ namespace WeAreMadCorps.Dashboard
     {
         public ForumPage()
         {
+            Content = new StackLayout
+            {
+                Children = {
+                    new Label { Text = "Redirection vers le Forum MadCorps en cours ..." ,
+                                HorizontalTextAlignment= TextAlignment.Center,
+                                VerticalTextAlignment = TextAlignment.Center}
+
+                }
+            };
             Device.OpenUri(new Uri("http://madcorps.com/forum/"));
+            
         }
     }
     public class Page10 : ContentPage
@@ -201,12 +230,7 @@ namespace WeAreMadCorps.Dashboard
     {
         public Page11()
         {
-            Content = new StackLayout
-            {
-                Children = {
-                    new Label { Text = "Page 11" }
-                }
-            };
+           // Content = new ContactUs();
         }
     }
     public class Page12 : ContentPage
