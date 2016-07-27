@@ -18,98 +18,110 @@ namespace WeAreMadCorps.Dashboard
         {
             return new List<DashSquare>() {
                 new DashSquare () {
-                    BackgroundImage = "fashionbg.png",
-                    IconImage = "appbar.group.png",
+                    BackgroundImage = "quisommesnousbg.jpg",
+                    IconImage = "",
                     Text = "Qui Sommes-Nous ?",
                     Column = 0,
                     Row = 0,
+                    EphemeralPage = false,
                     NavigateType = typeof(Page1)
                 },
                 new DashSquare () {
-                    BackgroundImage = "childrenbg.png",
-                    IconImage = "children.png",
+                    BackgroundImage = "nospartenaires.jpg",
+                    IconImage = "",
                     Text = "Nos Partenaires",
                     Column = 1,
                     Row = 0,
+                    EphemeralPage = false,
                     NavigateType = typeof(PartenairesCarousel)
                 },
                 new DashSquare () {
-                    BackgroundImage = "shoesbg.png",
-                    IconImage = "shoes.png",
+                    BackgroundImage = "nostournois.jpg",
+                    IconImage = "",
                     Text = "Nos Tournois",
                     Column = 2,
                     Row = 0,
+                    EphemeralPage = false,
                     NavigateType = typeof(Page3)
                 },
                 new DashSquare () {
-                    BackgroundImage = "luggagebg.png",
-                    IconImage = "luggage.png",
+                    BackgroundImage = "lestaff.jpg",
+                    IconImage = "",
                     Text = "Le Staff",
                     Column = 0,
                     Row = 1,
+                    EphemeralPage = false,
                     NavigateType = typeof(StaffMembers)
                 },
                 new DashSquare () {
                     BackgroundImage = "accessoriesbg.png",
-                    IconImage = "accessories.png",
+                    IconImage = "",
                     Text = "Les Streameurs",
                     Column = 1,
                     Row = 1,
+                    EphemeralPage = false,
                     NavigateType = typeof(StreamMembers)
                 },
                 new DashSquare () {
-                    BackgroundImage = "housewaresbg.png",
-                    IconImage = "housewares.png",
+                    BackgroundImage = "nosequipes.jpg",
+                    IconImage = "",
                     Text = "Les Equipes",
                     Column = 2,
                     Row = 1,
+                     EphemeralPage = false,
                     NavigateType = typeof(TeamView)
                 },
                 new DashSquare () {
                     BackgroundImage = "giftsbg.png",
-                    IconImage = "gifts.png",
+                    IconImage = "",
                     Text = "La WebTV",
                     Column = 0,
                     Row = 2,
+                     EphemeralPage = true,
                     NavigateType = typeof(WebTvPage)
                 },
                 new DashSquare () {
-                    BackgroundImage = "foodbg.png",
-                    IconImage = "food.png",
+                    BackgroundImage = "siteweb.png",
+                    IconImage = "",
                     Text = "Le Site",
                     Column = 1,
                     Row = 2,
+                     EphemeralPage = true,
                     NavigateType = typeof(SiteWebPage)
                 },
                 new DashSquare () {
                     BackgroundImage = "restroomsbg.png",
-                    IconImage = "restrooms.png",
+                    IconImage = "",
                     Text = "Le Forum",
                     Column = 2,
                     Row = 2,
+                     EphemeralPage = true,
                     NavigateType = typeof(ForumPage)
                 },
                 new DashSquare () {
                     BackgroundImage = "vendingbg.png",
-                    IconImage = "vending.png",
+                    IconImage = "",
                     Text = "Recrutement",
                     Column = 0,
                     Row = 3,
+                    EphemeralPage = false,
                     NavigateType = typeof(FindAPostePage)
                 },
                 new DashSquare () {
                     BackgroundImage = "servicesbg.png",
-                    IconImage = "services.png",
+                    IconImage = "",
                     Text = "Contactez-nous",
                     Column = 1,
                     Row = 3,
-                    NavigateType = typeof(ContactUs)
+                     EphemeralPage = true,
+                    NavigateType = typeof(ContactezNous)
                 },
-                new DashSquare () { BackgroundImage = "hoursbg.png",
-                    IconImage = "hours.png",
-                    Text = "On verra ce qu'on y met",
+                new DashSquare () { BackgroundImage = "",
+                    IconImage = "",
+                    Text = "",
                     Column = 2,
                     Row = 3,
+                    EphemeralPage = true,
                     NavigateType = typeof(Page12)
                 }
             };

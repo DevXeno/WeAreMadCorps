@@ -19,5 +19,7 @@ namespace WeAreMadCorps.Dashboard
         public int Row { get; set; }
 
         public Type NavigateType { get; set; }
+
+        public bool EphemeralPage { get; set; }
     }
 }

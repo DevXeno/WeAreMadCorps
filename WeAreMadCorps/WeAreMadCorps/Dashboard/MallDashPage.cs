@@ -47,7 +47,9 @@ namespace WeAreMadCorps.Dashboard
                 widget.Tapped += (object sender, WidgetTappedEventArgs e) =>
                 {
                     var page = Activator.CreateInstance(e.Page) as Page;
+                    if(!x.EphemeralPage)
                     Navigation.PushAsync(page);
+                    
                 };
                 dashboard.Children.Add(widget, x.Column, x.Row);
             }

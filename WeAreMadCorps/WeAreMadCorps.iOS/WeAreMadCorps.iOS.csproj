@@ -487,6 +487,24 @@
   <ItemGroup>
     <BundleResource Include="Resources\accessories.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\quisommesnousbg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\nospartenaires.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\nostournois.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\siteweb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\lestaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\nosequipes.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.2.0.31\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.2.0.31\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

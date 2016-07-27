@@ -169,49 +169,25 @@ namespace WeAreMadCorps.Dashboard
     {
         public WebTvPage()
         {
-            Content = new StackLayout
-            {
-                Children = {
-                    new Label { Text = "Redirection vers la WebTV MadCorps en cours ..." ,
-                                HorizontalTextAlignment= TextAlignment.Center,
-                                VerticalTextAlignment = TextAlignment.Center}
-
-                }
-            };
+            
             Device.OpenUri(new Uri("http://twitch.tv/madcorps_tv"));
+            SendBackButtonPressed();
         }
     }
     public class SiteWebPage : ContentPage
     {
         public SiteWebPage()
         {
-            Content = new StackLayout
-            {
-                Children = {
-                    new Label { Text = "Redirection vers www.madcorps.com en cours ..." ,
-                                HorizontalTextAlignment= TextAlignment.Center,
-                                VerticalTextAlignment = TextAlignment.Center}
-
-                }
-            };
             Device.OpenUri(new Uri("http://madcorps.com"));
+            SendBackButtonPressed();
         }
     }
     public class ForumPage : ContentPage
     {
         public ForumPage()
         {
-            Content = new StackLayout
-            {
-                Children = {
-                    new Label { Text = "Redirection vers le Forum MadCorps en cours ..." ,
-                                HorizontalTextAlignment= TextAlignment.Center,
-                                VerticalTextAlignment = TextAlignment.Center}
-
-                }
-            };
             Device.OpenUri(new Uri("http://madcorps.com/forum/"));
-            
+           
         }
     }
     public class Page10 : ContentPage
@@ -226,11 +202,12 @@ namespace WeAreMadCorps.Dashboard
             };
         }
     }
-    public class Page11 : ContentPage
+    public class ContactezNous : ContentPage
     {
-        public Page11()
+        public ContactezNous()
         {
-           // Content = new ContactUs();
+            Device.OpenUri(new Uri("mailto:" + "contact@madcorps.com"));
+         
         }
     }
     public class Page12 : ContentPage
