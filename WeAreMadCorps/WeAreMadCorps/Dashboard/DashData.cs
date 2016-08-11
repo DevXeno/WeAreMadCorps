@@ -113,8 +113,8 @@ namespace WeAreMadCorps.Dashboard
                     Text = "Contactez-nous",
                     Column = 1,
                     Row = 3,
-                     EphemeralPage = true,
-                    NavigateType = typeof(ContactezNous)
+                     EphemeralPage = false,
+                    NavigateType = typeof(ContactUs)
                 },
                 new DashSquare () { BackgroundImage = "",
                     IconImage = "",

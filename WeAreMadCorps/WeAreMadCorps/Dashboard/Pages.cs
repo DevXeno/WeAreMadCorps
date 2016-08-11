@@ -206,8 +206,8 @@ namespace WeAreMadCorps.Dashboard
     {
         public ContactezNous()
         {
-            Device.OpenUri(new Uri("mailto:" + "contact@madcorps.com"));
-         
+             Device.OpenUri(new Uri("mailto:" + "contact@madcorps.com"));
+           // ContactUs
         }
     }
     public class Page12 : ContentPage

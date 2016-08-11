@@ -10,6 +10,9 @@ namespace WeAreMadCorps.Pages.LesStreameurs
 {
     public partial class StreamMembers : ContentPage
     {
+        private ListView mListView;
+     
+
         public StreamMembers()
         {
             InitializeComponent();
@@ -18,5 +21,6 @@ namespace WeAreMadCorps.Pages.LesStreameurs
 
             LVMain.ItemsSource = smModel.streamMembers;
         }
+
     }
 }

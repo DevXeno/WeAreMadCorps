@@ -47,6 +47,10 @@ namespace WeAreMadCorps.Pages.LesStreameurs
             streamMembers.Add(new StreamMember { Name = "Brainstorm", Description = " ", ImagePath = "http://i2.wp.com/www.madcorps.com/wp-content/uploads/2016/04/brainstorm.png" });
             streamMembers.Add(new StreamMember { Name = "Mayki", Description = "  ", ImagePath = "http://i2.wp.com/www.madcorps.com/wp-content/uploads/2016/04/mayki.png" });
             streamMembers.Add(new StreamMember { Name = "Globnot", Description = " ", ImagePath = "http://i1.wp.com/www.madcorps.com/wp-content/uploads/2016/04/globnot.jpg" });
-          }
+            
+        }
+
+
+
     }
 }

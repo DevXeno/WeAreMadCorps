@@ -10,6 +10,7 @@
     <ListView
            x:Name="LVMain"
            ItemsSource="{Binding streamMembers}"
+           SelectedItem="{Binding SelectedItem}"
            HasUnevenRows ="false"
            RowHeight="120"
            AbsoluteLayout.LayoutFlags="All"

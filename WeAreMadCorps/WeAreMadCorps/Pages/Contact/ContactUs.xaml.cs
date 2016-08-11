@@ -20,39 +20,34 @@ namespace WeAreMadCorps.Pages.Contact
         {
 
             //On envoi un mail avec tous les champs du formulaire.
-            DisplayAlert("Succès", "Le message a été envoyé avec succès", "OK");
+            //DisplayAlert("Succès", "Le message a été envoyé avec succès", "OK");
 
-            Device.OpenUri(new Uri("mailto:" + "contact@madcorps.com"));
+            //Device.OpenUri(new Uri("mailto:" + "contact@madcorps.com"));
 
-         //   CrossMessaging.Current.EmailMessenger.SendSampleEmail(BuildSampleEmail(false).Build());
+            //   CrossMessaging.Current.EmailMessenger.SendSampleEmail(BuildSampleEmail(false).Build());
+            
+            var emailMessenger = CrossMessaging.Current.EmailMessenger;
+            if (emailMessenger.CanSendEmail)
+            {
+                // Send simple e-mail to single receiver without attachments, bcc, cc etc.
+               // emailMessenger.SendEmail("xeno.esport@gmail.com", "test", "ceci est un test de Xeno");
 
+                // Alternatively use EmailBuilder fluent interface to construct more complex e-mail with multiple recipients, bcc, attachments etc. 
+                var email = new EmailMessageBuilder()
+                  .To("xeno.esport@gmail.com")
+                  .Subject('['+textBoxName.Text+']'+" Ceci est le titre")
+                  .Body("la même \n\n\n\n "+ textBoxName .Text+ '\n'+ textBoxEmail.Text)
+                  .Build();
 
+                emailMessenger.SendEmail(email);
+            }
 
 
 
             ResetAllControl();
         }
       
-        public EmailMessageBuilder BuildSampleEmail(bool sendAsHtml = false)
-        {
-            var builder = new EmailMessageBuilder()
-                .To("to.contact@madcorps.com")
-                .Cc("cc.")
-                //.Bcc(new[] { "bcc1.plugins@xamarin.com", "bcc2.plugins@xamarin.com" })
-                .Subject('[' + textBoxName.Text + ']' + " " + textBoxSujet.Text)
-                .Body(textBoxMessage.Text);
-
-#if __ANDROID__ || __IOS__
-
-            if (sendAsHtml)
-                builder.BodyAsHtml("Well hello there from <b>Xam.Messaging.Plugin</b>");
-#endif
-            if (!sendAsHtml)
-                builder.Body("Well hello there from Xam.Messaging.Plugin");
-
-            return builder;
-        }
-
+     
         private void ResetAllControl()
         {
             //   textBoxEmail.Text = string.Empty;

@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace WeAreMadCorps.Pages.LesStreameurs
 {
-    public class StreamMember
+    public class StreamMember : Button
     {
         public string Name { get; set; }
 
